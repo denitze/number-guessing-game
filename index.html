@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Number Guessing Game</h1>
+    </header>
+
+    <main>
+        <section class="border-sec">
+            <h3>How many Rounds?</h3>
+            <div id="rounds">
+                <form action="" id="radios">
+                    <div id="radio-div">
+                        <input type="radio" value=4 name="count-rounds" id="four" checked>
+                        <label for="">4</label> 
+                        <input type="radio" value=5 name="count-rounds" id="five">
+                        <label for="">5</label><br>
+                        <input type="radio" value=6 name="count-rounds" id="six">
+                        <label for="">6</label>
+                        <input type="radio" name="count-rounds" id="custom">
+                        <label for="custom">custom</label>
+                        
+                            <input type="number" name="count-rounds" id="customInput" placeholder="how many rounds?">
+                           
+                    </div>
+                    <div id="round-count">
+                        <span id="roundNow"></span>/<span id="roundTotal"></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="border-sec">
+            <form action="" method="" id="input-number">
+                <label for="guessField">Enter a guess: <br></label>
+                <input type="number" id="guessField" class="guessField" placeholder="enter a number"><br>
+                <input type="submit" value="Guess" id="guessSubmit">
+            </form>
+        </section>
+
+        <section>
+            <div id="result">
+        
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
