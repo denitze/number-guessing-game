@@ -6,7 +6,7 @@
 }
 
 body {
-    background:linear-gradient(42deg, rgba(140,62,147,1) 5%, rgba(102,88,208,1) 100%);
+    background:linear-gradient(42deg, #D63A47 5%, #E68E44 100%);
     background-repeat: no-repeat;
     min-height: 100vh;
     color:white;
@@ -15,8 +15,9 @@ body {
 }
 
 header {
-    /* background: white; */
-    color:white;
+    background: #a6aec145;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color:#11416A;
     padding:1rem;
 }
 
@@ -26,13 +27,13 @@ h1 {
 }
 
 .border-sec{
-    border: 3px solid white;
+    background:#11416A;
     width:40%;
     margin: 2rem auto;
     color:white;
     font-size: 1rem;
     padding:1rem;
-    border-radius: 3px;
+    border-radius: 20px;
     box-shadow: 13px 16px 15px 1px rgba(62, 62, 62, 0.54);
 }
 
@@ -48,8 +49,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
-
 
 #customInput {
     display:none;
@@ -75,8 +74,8 @@ border:none;
 }
 
 input[type=submit] {
-background:white;
-color:rgb(82, 78, 78);
+background:linear-gradient(42deg, #D63A47 5%, #E68E44 100%);;
+color:white;
 border:none;
 border-radius: 5px;
 padding:.9rem 2rem;
@@ -91,23 +90,16 @@ text-transform: uppercase;
 
 
 a {
-    color:yellow;
+    color:#11416A;
 font-size: 1.5rem;
 }
 
 
 
-
-
-
-
-
-
 @media only screen and (max-width: 1024px) {
     .border-sec{
-        width:98%;
-        border: 7px solid white;
-        margin: 5vh 1%;
+        width:80%;
+        margin: 5vh auto;
         font-size: 2rem;
 
     }
@@ -124,7 +116,6 @@ font-size: 1.5rem;
 @media only screen and (max-width: 580px) {
     .border-sec{
         width:90%;
-        border: 7px solid white;
         margin: 1rem;
         font-size: 1.2rem;
     }
