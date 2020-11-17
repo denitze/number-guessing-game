@@ -6,15 +6,17 @@
 }
 
 body {
-    background:rgb(199, 103, 62);
+    background:linear-gradient(42deg, rgba(140,62,147,1) 5%, rgba(102,88,208,1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
     color:white;
     text-align: center;
     font-family: 'Asap', sans-serif;
 }
 
 header {
-    background: white;
-    color:#24272E;
+    /* background: white; */
+    color:white;
     padding:1rem;
 }
 
@@ -31,6 +33,12 @@ h1 {
     font-size: 1rem;
     padding:1rem;
     border-radius: 3px;
+    box-shadow: 13px 16px 15px 1px rgba(62, 62, 62, 0.54);
+}
+
+#rounds {
+    width:40%;
+    margin:0 auto;
 }
 
 #radio-div {
@@ -41,20 +49,13 @@ h1 {
     align-items: center;
 }
 
-#rounds {
-    width:40%;
-    margin:0 auto;
-}
+
 
 #customInput {
     display:none;
     grid-column-start:1 ;
     grid-column-end: -1;
 }
-
-/* #radios label {
-    margin-right:4rem;
-} */
 
 #round-count {
     font-size: 4rem;
@@ -69,10 +70,16 @@ input {
 input[type=number] {
 padding:1rem;
 font-family: 'Asap', sans-serif;
+background:white;
+border:none;
 }
 
 input[type=submit] {
-padding:.5rem 1rem;
+background:white;
+color:rgb(82, 78, 78);
+border:none;
+border-radius: 5px;
+padding:.9rem 2rem;
 font-family: 'Asap', sans-serif;
 text-transform: uppercase;
 }
