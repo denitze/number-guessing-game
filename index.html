@@ -18,16 +18,14 @@
                 <form action="" id="radios">
                     <div id="radio-div">
                         <input type="radio" value=4 name="count-rounds" id="four" checked>
-                        <label for="">4</label> 
+                        <label for="four">4</label> 
                         <input type="radio" value=5 name="count-rounds" id="five">
-                        <label for="">5</label><br>
+                        <label for="five">5</label>
                         <input type="radio" value=6 name="count-rounds" id="six">
-                        <label for="">6</label>
-                        <input type="radio" name="count-rounds" id="custom">
+                        <label for="six">6</label>
+                        <input type="radio" name="count-rounds" id="custom" value=0>
                         <label for="custom">custom</label>
-                        
-                            <input type="number" name="count-rounds" id="customInput" placeholder="how many rounds?">
-                           
+                            <input type="number" name="count-rounds" id="customInput" placeholder="how many rounds?" value=>  
                     </div>
                     <div id="round-count">
                         <span id="roundNow"></span>/<span id="roundTotal"></span>
@@ -45,9 +43,8 @@
         </section>
 
         <section>
-            <div id="result">
-        
-            </div>
+            <div id="result"></div>
+            <div id="winOrLose"></div>
         </section>
 
 

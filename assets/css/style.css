@@ -6,22 +6,21 @@
 }
 
 body {
-    background:#24272E;
+    background:rgb(199, 103, 62);
     color:white;
     text-align: center;
     font-family: 'Asap', sans-serif;
 }
 
 header {
-    background: #fff;
+    background: white;
     color:#24272E;
-    
     padding:1rem;
 }
 
 h1 {
     font-size:2rem;
-    color:#24272E;
+
 }
 
 .border-sec{
@@ -33,20 +32,30 @@ h1 {
     padding:1rem;
     border-radius: 3px;
 }
-#radios {
-   
-   justify-content: space-around;
-   text-align: left;
 
+#radio-div {
+  display:grid;
+  grid-template-columns: .5fr 1fr 1fr .5fr;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+#rounds {
+    width:40%;
+    margin:0 auto;
 }
 
 #customInput {
     display:none;
+    grid-column-start:1 ;
+    grid-column-end: -1;
 }
 
-#radios label {
+/* #radios label {
     margin-right:4rem;
-}
+} */
+
 #round-count {
     font-size: 4rem;
     text-align: center;
@@ -68,15 +77,56 @@ font-family: 'Asap', sans-serif;
 text-transform: uppercase;
 }
 
-#result {
+
+#result, #winOrLose {
     font-size: 1.2rem;
 }
+
+
 a {
     color:yellow;
 font-size: 1.5rem;
 }
 
 
-/* form div {
-    margin: 1vh;
-} */
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .border-sec{
+        width:98%;
+        border: 7px solid white;
+        margin: 5vh 1%;
+        font-size: 2rem;
+
+    }
+    input{
+        font-size: 2rem;
+        }
+
+        #result, #winOrLose {
+            font-size: 1.8rem;
+        }
+    }
+
+
+@media only screen and (max-width: 580px) {
+    .border-sec{
+        width:90%;
+        border: 7px solid white;
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    input{
+        font-size: 1rem;
+    }
+
+    #result, #winOrLose {
+        font-size: 1.1rem;
+    }
+}
